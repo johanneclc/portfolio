@@ -1,0 +1,108 @@
+@import './../globals.css';
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .columns-4{
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+    flex-wrap: wrap; 
+  }
+
+    .columns-4 div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 300px; 
+  }
+
+
+.contact {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #0f0;
+    margin-bottom: 80px;
+    font-size: 24px;
+}
+
+.contact-linkedin {
+  animation: typingLinkedin 3s steps(9), blink 0.7s ; 
+}
+
+@keyframes typingLinkedin {
+  from { width: 0; }
+  to { width: 9ch; }
+}
+
+.contact-github {
+  animation: typingGithub 3s steps(6), blink 0.7s ; 
+}
+
+@keyframes typingGithub {
+  from { width: 0; }
+  to { width: 6ch; }
+}
+
+.contact-phone {
+  animation: typingPhone 3s steps(14), blink 0.7s ; 
+}
+
+@keyframes typingPhone {
+  from { width: 0; }
+  to { width: 14ch; }
+}
+
+.contact-mail {
+  animation: typingMail 3s steps(24), blink 0.7s ; 
+}
+
+@keyframes typingMail {
+  from { width: 0; }
+  to { width: 24ch; }
+}
+
+.contact-icon {
+  font-size: 150px;
+  color: #0f0;  
+}
+
+.contact-icon {
+  margin-bottom: 20px; /* Ajout d'un espace entre les icônes et les textes */
+  transition: transform 0.3s ease-in-out; /* Effet de zoom au survol */
+}
+
+.contact-icon:hover {
+  transform: scale(1.2); /* Effet de zoom */
+  color: #33ff33; /* Changement de couleur au survol */
+}
+    
+.menu {
+    background-color: #000;
+    color: #0f0;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace; 
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  
+  .menu li {
+    margin-right: 15px; 
+  }
+  
