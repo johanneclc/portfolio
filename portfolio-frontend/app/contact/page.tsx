@@ -3,6 +3,7 @@
 import {  AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import Menu from '../components/Menu/menu';
 import './contact.css';
+import Banner from '../components/Banner/banner';
 
 export default function Contact() {
 
@@ -20,8 +21,8 @@ export default function Contact() {
   return (
       <div>
         <Menu />
-        <div style={{ paddingTop: '100px' }}> 
-          <h1 className='page-title'> Contact </h1>
+        <div style={{ paddingTop: '85px' }}> 
+          <Banner title="Contact"/>
           <div className='columns-4 content-center' style={{ paddingTop: '150px' }}> 
             <div>
               <a href='https://www.linkedin.com/in/johanne-calcoen-72a5b4194/' target="_blank">

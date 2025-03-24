@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.bg-banner {
+    background-image: url('./../../assets/images/banner.png');
+  }
+
+.page-title {
+    font-family: var(--font-geist-sans);
+    text-align: center;
+    font-size: 75px;
+    color: #0f0;  
+    font-family: 'Courier New', Courier, monospace;
+}
