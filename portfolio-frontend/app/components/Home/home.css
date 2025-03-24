@@ -1,4 +1,5 @@
 @import './../../globals.css';
+
 body {
   background-color: #000;
   color: #0f0;
@@ -8,6 +9,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
   h1 {
     animation: typing 2s steps(22);
     overflow: hidden;
@@ -26,5 +28,6 @@ body {
     animation: fadeIn 2s forwards;
     animation-delay: 2s; 
     opacity: 0;
+    justify-content: space-between;
   } 
   
