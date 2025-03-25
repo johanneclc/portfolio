@@ -1,32 +1,31 @@
-@import './../../globals.css';
-@import './../MenuHome/menu-home.css';
+@import "./../../globals.css";
+@import "./../MenuHome/menu-home.css";
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .menu {
-    background-color: #000;
-    color: #0f0;
-    padding: 10px 20px;
-    font-family: 'Courier New', Courier, monospace; 
-    display: flex;
-    align-items: center;
-    position: fixed; 
-    top: 0;
-    width: 100%;
-    z-index: 1000; 
-  }
-  
+  background-color: #000;
+  color: #0f0;
+  padding: 10px 20px;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .menu ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    justify-content: flex-start;
-  }
-  
-  .menu li {
-    margin-right: 15px; 
-  }
-  
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.menu li {
+  margin-right: 15px;
+}
