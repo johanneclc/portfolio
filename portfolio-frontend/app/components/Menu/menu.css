@@ -1,38 +1,32 @@
 @import './../../globals.css';
+@import './../MenuHome/menu-home.css';
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .menu {
+    background-color: #000;
+    color: #0f0;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace; 
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  
+.menu ul {
     display: flex;
     list-style-type: none;
     padding: 0;
-    width: 100%; 
-    margin: 0 auto;
+    margin: 0;
+    justify-content: flex-start;
   }
   
   .menu li {
-    padding: 10px;
-    flex: 1; 
-    text-align: center;
+    margin-right: 15px; 
   }
   
-  .menu a {
-    color: #0f0;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-  }
-  
-  .menu a:hover {
-    color: #fff;
-    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
-  }
-  
-  .menu a:active {
-    color: #0a0;
-  }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }

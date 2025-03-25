@@ -1,6 +1,5 @@
 @import './../globals.css';
 
-
 body {
     font-family: 'Courier New', Courier, monospace;
   }
@@ -80,29 +79,3 @@ body {
   transform: scale(1.2); /* Effet de zoom */
   color: #33ff33; /* Changement de couleur au survol */
 }
-    
-.menu {
-    background-color: #000;
-    color: #0f0;
-    padding: 10px 20px;
-    font-family: 'Courier New', Courier, monospace; 
-    display: flex;
-    align-items: center;
-    position: fixed; 
-    top: 0;
-    width: 100%;
-    z-index: 1000; 
-  }
-  
-.menu ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    justify-content: flex-start;
-  }
-  
-  .menu li {
-    margin-right: 15px; 
-  }
-  

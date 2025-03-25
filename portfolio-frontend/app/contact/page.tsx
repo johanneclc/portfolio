@@ -1,9 +1,9 @@
 'use client' 
 
 import {  AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
-import Menu from '../components/Menu/menu';
 import './contact.css';
 import Banner from '../components/Banner/banner';
+import Menu from '../components/Menu/menu';
 
 export default function Contact() {
 

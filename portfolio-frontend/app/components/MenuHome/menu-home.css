@@ -1,0 +1,38 @@
+@import './../../globals.css';
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    width: 100%; 
+    margin: 0 auto;
+  }
+  
+  .menu li {
+    padding: 10px;
+    flex: 1; 
+    text-align: center;
+  }
+  
+  .menu a {
+    color: #0f0;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  }
+  
+  .menu a:active {
+    color: #0a0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
