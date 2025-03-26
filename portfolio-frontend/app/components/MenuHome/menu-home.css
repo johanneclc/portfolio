@@ -15,7 +15,7 @@
 }
 
 .menu a {
-  color: #0f0;
+  color: #4fc96f;
   text-decoration: none;
   font-family: "Courier New", Courier, monospace;
   font-size: 30px;
@@ -27,8 +27,8 @@
 .menu a:hover {
   color: #fff;
   text-shadow:
-    0 0 5px #0f0,
-    0 0 10px #0f0;
+    0 0 5px #4fc96f,
+    0 0 10px #4fc96f;
 }
 
 .menu a:active {

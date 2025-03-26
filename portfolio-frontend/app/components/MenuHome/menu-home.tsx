@@ -7,10 +7,10 @@ export default function MenuHome() {
         <a href="/about">A propos</a>
       </li>
       <li>
-        <a href="/projects">Projets</a>
+        <a href="/projects">Mon Parcours</a>
       </li>
       <li>
-        <a href="/refferals">Reférences</a>
+        <a href="/refferals">Recommandations</a>
       </li>
       <li>
         <a href="/contact">Contact</a>
