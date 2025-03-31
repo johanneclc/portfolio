@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 body {
-  background-color: rgb(40, 40, 40);
-  color: white;
+  background-color: #f6fff6;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

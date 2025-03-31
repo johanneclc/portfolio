@@ -17,7 +17,6 @@
 .menu a {
   color: #4fc96f;
   text-decoration: none;
-  font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   transition:
     color 0.3s ease,
