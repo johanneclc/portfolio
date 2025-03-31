@@ -1,25 +1,10 @@
 @import "tailwindcss";
 
-/* .page-title {
-  font-family: var(--font-geist-sans);
-  text-align: center;
-  font-size: 75px;
-  color: black;
-  font-family: "Courier New", Courier, monospace;
-  background-color: #4fc96f;
-} */
-
 .page-title {
   font-family: var(--font-geist-sans);
   text-align: center;
   font-size: 75px;
-  font-family: "Courier New", Courier, monospace;
-  background: linear-gradient(to right, #a6e5b6, #048609);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-size: auto;
-  background-repeat: no-repeat;
+  color: #4fc96f;
   display: inline-block;
   justify-content: center;
 }

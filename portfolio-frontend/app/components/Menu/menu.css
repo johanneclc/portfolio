@@ -1,15 +1,10 @@
 @import "./../../globals.css";
 @import "./../MenuHome/menu-home.css";
 
-body {
-  font-family: "Courier New", Courier, monospace;
-}
-
 .menu {
   background-color: #000;
   color: #4fc96f;
   padding: 10px 20px;
-  font-family: "Courier New", Courier, monospace;
   display: flex;
   align-items: center;
   position: fixed;

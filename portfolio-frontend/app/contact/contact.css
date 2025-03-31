@@ -1,9 +1,5 @@
 @import "./../globals.css";
 
-body {
-  font-family: "Courier New", Courier, monospace;
-}
-
 .columns-4 {
   display: flex;
   justify-content: center;
