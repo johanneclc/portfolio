@@ -1,4 +1,6 @@
-package com.example.portfolio_backend.refferals;
+package com.example.portfolio_backend.refferals.models;
+
+import org.hibernate.annotations.ColumnDefault;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -24,12 +26,13 @@ public class Refferal {
     @JoinColumn(name = "user_id")
     private User author; 
 
-    @Column(name = "description")
+    @Column()
     private String description; 
 
-    @Column(name = "date")
+    @Column()
     private String date; 
 
-    @Column(name="is_approved")
+    // TODO: à tester
+    @ColumnDefault("0")
     private Boolean isApproved; 
 }

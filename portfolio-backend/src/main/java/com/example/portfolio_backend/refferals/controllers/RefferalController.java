@@ -1,36 +1,37 @@
-package com.example.portfolio_backend.refferals;
+package com.example.portfolio_backend.refferals.controllers;
 
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import jakarta.transaction.Transactional;
+import com.example.portfolio_backend.refferals.models.Refferal;
+import com.example.portfolio_backend.refferals.services.RefferalService;
 
+
+@CrossOrigin
 @RestController
 @RequestMapping("/refferals")
 public class RefferalController {
-    final RefferalRepository refferalRepository;
-    final UserRepository userRepository;
+    final RefferalService refferalService;
 
-    public RefferalController (RefferalRepository refferalRepository, UserRepository userRepository) {
-        this.refferalRepository = refferalRepository;
-        this.userRepository = userRepository;
+    public RefferalController (RefferalService refferalService) {
+        this.refferalService = refferalService;
     }
 
     @GetMapping()
     public ResponseEntity<List<Refferal>> getAll() {
-        return new ResponseEntity<>(refferalRepository.findAll(), HttpStatus.OK); 
+        return new ResponseEntity<>(refferalService.getAllRefferals(), HttpStatus.OK); 
     }
 
     @PostMapping()
-    @Transactional
     public ResponseEntity<Refferal> createRefferal(@RequestBody Refferal refferal) {
-        return new ResponseEntity<>(refferalRepository.save(refferal), HttpStatus.CREATED);
+        return new ResponseEntity<>(refferalService.createRefferal(refferal), HttpStatus.CREATED);
     }
 }
