@@ -27,7 +27,7 @@ public class RefferalController {
 
     @GetMapping()
     public ResponseEntity<List<Refferal>> getAll() {
-        return new ResponseEntity<>(refferalService.getAllRefferals(), HttpStatus.OK); 
+        return new ResponseEntity<>(refferalService.getApprovedRefferals(), HttpStatus.OK); 
     }
 
     @PostMapping()

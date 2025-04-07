@@ -1,9 +1,7 @@
 package com.example.portfolio_backend.refferals.services;
 
 import java.util.List;
-
 import org.springframework.stereotype.Service;
-
 import com.example.portfolio_backend.refferals.models.Refferal;
 import com.example.portfolio_backend.refferals.repositories.RefferalRepository;
 
@@ -18,11 +16,12 @@ public class RefferalService {
         this.refferalRepository = refferalRepository;
     }
 
-    @Transactional
-    public List<Refferal> getAllRefferals() {
-        return refferalRepository.findAll(); 
+
+    public List<Refferal> getApprovedRefferals() {
+        return refferalRepository.findByIsApproved(Boolean.TRUE); 
     }
 
+    @Transactional
     public Refferal createRefferal(Refferal refferal){
         return refferalRepository.save(refferal);
     }

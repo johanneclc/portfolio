@@ -32,7 +32,6 @@ public class Refferal {
     @Column()
     private String date; 
 
-    // TODO: à tester
     @ColumnDefault("0")
     private Boolean isApproved; 
 }
